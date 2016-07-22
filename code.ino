@@ -127,14 +127,14 @@ void Befehlauswerten(int befehl) {                  // Befehlswert wird ausgewer
   switch(befehl){
     case(1): Serial.println("Links drehen");        // Wird die Zahl 1 empfangen soll sich der Quadrocpoter gegen den Uhrzeigersinn drehen
        motor1.writeMicroseconds(vmotor1-vdrehen);   // Drehzahlen für Motor 1 um vdrehen verringern
-       motor2.writeMicroseconds(vmotor2+vdrehen);	// Drehzahlen für Motor 2 um vdrehen erhöhen
-       motor3.writeMicroseconds(vmotor3-vdrehen);	// Drehzahlen für Motor 3 um vdrehen verringern
-       motor4.writeMicroseconds(vmotor4+vdrehen);	// Drehzahlen für Motor 4 um vdrehen erhöhen
-       delay(200);                                  // 200ms warten und dann die Drehzahlen wieder zurücksetzten
-       motor1.writeMicroseconds(vmotor1+vdrehen);	// Drehzahlen für Motor 1 um vdrehen erhöhen
-       motor2.writeMicroseconds(vmotor2-vdrehen);	// Drehzahlen für Motor 2 um vdrehen verringern
-       motor3.writeMicroseconds(vmotor3+vdrehen);	// Drehzahlen für Motor 3 um vdrehen erhöhen
-       motor4.writeMicroseconds(vmotor4-vdrehen);	// Drehzahlen für Motor 4 um vdrehen verringern
+      motor2.writeMicroseconds(vmotor2+vdrehen);	  // Drehzahlen für Motor 2 um vdrehen erhöhen
+       motor3.writeMicroseconds(vmotor3-vdrehen);	  // Drehzahlen für Motor 3 um vdrehen verringern
+       motor4.writeMicroseconds(vmotor4+vdrehen);	  // Drehzahlen für Motor 4 um vdrehen erhöhen
+      delay(200);                                   // 200ms warten und dann die Drehzahlen wieder zurücksetzten
+       motor1.writeMicroseconds(vmotor1+vdrehen);	  // Drehzahlen für Motor 1 um vdrehen erhöhen
+       motor2.writeMicroseconds(vmotor2-vdrehen);	  // Drehzahlen für Motor 2 um vdrehen verringern
+       motor3.writeMicroseconds(vmotor3+vdrehen);	  // Drehzahlen für Motor 3 um vdrehen erhöhen
+       motor4.writeMicroseconds(vmotor4-vdrehen);	  // Drehzahlen für Motor 4 um vdrehen verringern
        break;
     case(2): Serial.println("Rechts drehen");        // Wird die Zahl 2 empfangen soll sich der Quadrocpoter im Uhrzeigersinn drehen
        motor1.writeMicroseconds(vmotor1+vdrehen);
